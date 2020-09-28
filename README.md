@@ -18,6 +18,7 @@ Host bastion
 Host someinternalhost
         ProxyJump bastion
         HostName 10.130.0.33
+        IdentityFile ~/.ssh/kit-it
         User kit-it
 
 Далее используем команду ssh someinternalhost  для быстрого и удобного подключения
