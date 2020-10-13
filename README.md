@@ -1,5 +1,5 @@
 # KIT-IT_infra
-KIT-IT Infra repository
+KIT-IT Infra repository.
 Домашнее задание 4
 
 bastion_IP = 130.193.49.215
@@ -24,3 +24,8 @@ Host someinternalhost
 Далее используем команду ssh someinternalhost  для быстрого и удобного подключения
 
 sudo pritunl setup-key - d9c516f3922a476e850cbcb490632ab6
+
+Домашнее задание 5
+
+testapp_IP =
+testapp_port =
