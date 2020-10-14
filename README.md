@@ -1,26 +1,32 @@
-# KIT-IT_infra
-KIT-IT Infra repository
-Домашнее задание 4
+#KIT-IT_infra
+#KIT-IT Infra repository..
+#Домашнее задание 4
 
-bastion_IP = 130.193.49.215
-someinternalhost_IP = 10.130.0.33
+bastion_IP = 84.201.172.200
+someinternalhost_IP = 10.130.0.23
 
-Скозвное подключение через одну команду [user@localhost .ssh]$ ssh -i ~/.ssh/kit-it -Jkit-it@130.193.49.215 kit-it@10.130.0.33
+Скозвное подключение через одну команду ssh -i ~/.ssh/appuser -AJ appuser@84.201.172.200 appuser@10.130.0.23
 для быстрого подключения используется ProxyJump
 Создаем ~/.ssh/config
 Вносми кофиграцию:
 
 Host bastion
-	HostName 130.193.49.215
-        IdentityFile ~/.ssh/kit-it
-        User kit-it
+	HostName 84.201.172.200
+	Port 22
+        IdentityFile ~/.ssh/appuser
+        User appuser
+	ForwardAgent yes
 
 Host someinternalhost
         ProxyJump bastion
-        HostName 10.130.0.33
-        IdentityFile ~/.ssh/kit-it
-        User kit-it
+        HostName 10.130.0.23
+	Port 22
+        IdentityFile ~/.ssh/apuser
+        User appuser
 
 Далее используем команду ssh someinternalhost  для быстрого и удобного подключения
 
-sudo pritunl setup-key - d9c516f3922a476e850cbcb490632ab6
+#Домашнее задание 5
+
+testapp_IP =
+testapp_port =
