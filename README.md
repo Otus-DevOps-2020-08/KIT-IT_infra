@@ -28,5 +28,5 @@ Host someinternalhost
 
 #Домашнее задание 5
 
-testapp_IP =
-testapp_port =
+testapp_IP = 84.201.175.33
+testapp_port = 9292
