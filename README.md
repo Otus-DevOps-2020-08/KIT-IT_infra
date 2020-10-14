@@ -1,5 +1,5 @@
 #KIT-IT_infra
-#KIT-IT Infra repository..
+#KIT-IT Infra repository...
 #Домашнее задание 4
 
 bastion_IP = 84.201.172.200
