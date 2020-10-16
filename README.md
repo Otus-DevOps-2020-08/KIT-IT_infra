@@ -27,7 +27,6 @@ Host someinternalhost
 Далее используем команду ssh someinternalhost  для быстрого и удобного подключения
 
 #Домашнее задание 5
-
 testapp_IP = 84.201.175.33
 testapp_port = 9292
 
