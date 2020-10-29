@@ -8,4 +8,4 @@ subnet_id                = "e9bg41lpd9f3jra5tc"
 private_key              = "~/.ss/ubuntu"
 yandex_compute_instance  = "redd-app"
 reddit_listener_port     = "9292"
-instances_count          = 2
+instances_count          = "2"
