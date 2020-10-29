@@ -69,3 +69,11 @@ create-boot-disk image-family=reddit-full,size=10GB
 network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4
 metadata serial-port-enable=1
 ssh-key ~/.ssh/kit/appuser.pub
+
+#Домашнее задание 7
+
+1. Создан Insnace reddit-app.
+2. Определены переменные по заданию.
+3. Отформатированы конфигурационные файлы.
+4. Выложен в git terraform.tfvars.example.
+5. Создан балансировщик и lb.tf. Задание с count не выполнено.
