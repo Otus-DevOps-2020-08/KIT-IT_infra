@@ -5,3 +5,5 @@
 *.tfvars
 .terraform/
 *terraform-2
+*key.json
+varsions.tf
