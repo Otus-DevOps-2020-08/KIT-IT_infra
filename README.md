@@ -84,3 +84,9 @@ ssh-key ~/.ssh/kit/appuser.pub
 3. Добавлены провиженеры.
 4. Создан инстансе. Приложение получает адрес БД из переменной
 окружения DATABASE_URL..
+#Домашнее задание 8
+1. Потому что удалили каталог и через плейбук добавили снова.
+2. Создан JSON ansible-inventory --list >> inventory.json
+3. Добавлена группа all в inventory.yml команда ansible all -m
+ping заработала.
+4. Добавлен в ansible.cfg invetory.json
