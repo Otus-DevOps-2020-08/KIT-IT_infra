@@ -1,29 +1,16 @@
 {
-    "_meta": {
-        "hostvars": {
-            "appserver": {
-                "ansible_host": "130.193.37.118"
-            },
-            "dbserver": {
-                "ansible_host": "84.201.157.154"
-            }
-        }
-    },
-    "all": {
-        "children": [
-            "app",
-            "db",
-            "ungrouped"
-        ]
-    },
     "app": {
-        "hosts": [
-            "appserver"
-        ]
+      "hosts": {
+        "appserver": {
+          "ansible_host": "130.193.37.118"
+        }
+      }
     },
     "db": {
-        "hosts": [
-            "dbserver"
-        ]
+      "hosts": {
+        "dbserver": {
+          "ansible_host": "84.201.157.154"
+        }
+      }
     }
 }
