@@ -4,3 +4,6 @@
 *.tfstate.backup
 *.tfvars
 .terraform/
+*terraform-2
+*key.json
+*versions.tf
