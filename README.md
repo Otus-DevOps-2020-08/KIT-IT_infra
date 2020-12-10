@@ -90,3 +90,8 @@ ssh-key ~/.ssh/kit/appuser.pub
 3. Добавлена группа all в inventory.yml команда ansible all -m
 ping заработала.
 4. Добавлен в ansible.cfg invetory.json
+#Домашнее задание 11
+1. Убрали провижены из модулей terraform
+2. Добавили в git исключения
+3. Использовали ansible в packer
+4. Создали несколько плейбуков

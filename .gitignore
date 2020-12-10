@@ -7,3 +7,4 @@
 *terraform-2
 *key.json
 *versions.tf
+*.retry

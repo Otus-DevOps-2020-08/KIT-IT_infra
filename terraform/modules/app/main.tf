@@ -36,19 +36,22 @@ resource "yandex_compute_instance" "app" {
   }
 
   provisioner "file" {
-    source      = "../modules/files/puma.service"
+    source      = "/home/kit/Desktop/GIT/OTUS/KIT-IT_infra/terraform/modules/files/puma.service"
     destination = "/tmp/puma.service"
   }
 
   provisioner "file" {
-    source      = "../modules/files/deploy.sh"
+    source      = "/home/kit/Desktop/GIT/OTUS/KIT-IT_infra/terraform/modules/files/deploy.sh"
     destination = "/tmp/deploy.sh"
   }
 
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/deploy.sh",
-      "sudo /tmp/deploy.sh ${var.db_url}"
+      "sudo /tmp/deploy.sh"
     ]
   }
+#  provisioner "remote-exec" {
+#    script = "/tmp/deploy.sh"
+#  }
 }

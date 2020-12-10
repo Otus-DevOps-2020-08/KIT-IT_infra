@@ -46,3 +46,7 @@ variable db_disk_image {
   description = "Disk image for reddit db"
   default     = "reddit-db-base"
 }
+
+#variable db_host {
+#  description = "Internal ip host for db"
+#}

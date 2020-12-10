@@ -5,7 +5,7 @@ provider "yandex" {
   zone                     = var.zone
 }
 
-terraform {
+/*terraform {
   backend "s3" {
     endpoint   = "storage.yandexcloud.net"
     bucket     = "kit-it"
@@ -17,7 +17,7 @@ terraform {
     skip_region_validation      = true
     skip_credentials_validation = true
   }
-}
+}*/
 
 module "app" {
   source          = "../modules/app"
